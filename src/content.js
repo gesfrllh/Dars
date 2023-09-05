@@ -21,73 +21,73 @@ export const about = {
   stack: [
     {
       data: {
-        img: "../public/react.svg",
+        img: "/react.svg",
         title: "React JS",
       },
     },
     {
       data: {
-        img: "../public/images/vue.png",
+        img: "/images/vue.png",
         title: "Vue JS",
       },
     },
     {
       data: {
-        img: "../public/images/html.png",
+        img: "/images/html.png",
         title: "HTML 5",
       },
     },
     {
       data: {
-        img: "../public/images/css.png",
+        img: "/images/css.png",
         title: "CSS 3",
       },
     },
     {
       data: {
-        img: "../public/images/api.png",
+        img: "/images/api.png",
         title: "RestAPI",
       },
     },
     {
       data: {
-        img: "../public/images/tailwind.png",
+        img: "/images/tailwind.png",
         title: "Tailwind CSS",
       },
     },
     {
       data: {
-        img: "../public/images/js.png",
+        img: "/images/js.png",
         title: "JavaScript ES6",
       },
     },
     {
       data: {
-        img: "../public/images/nuxt.png",
+        img: "/images/nuxt.png",
         title: "Nuxt JS",
       },
     },
     {
       data: {
-        img: "../public/images/ts.png",
+        img: "/images/ts.png",
         title: "Typesript",
       },
     },
     {
       data: {
-        img: "../public/images/bootstrap.png",
+        img: "/images/bootstrap.png",
         title: "Bootstrap",
       },
     },
     {
       data: {
-        img: "../public/images/git.png",
+        img: "/images/git.png",
         title: "Git",
       },
     },
     {
       data: {
-        img: "../public/images/cloud.png",
+        img: "/images/cloud.png",
         title: "Google Cloud",
       },
     },
@@ -103,7 +103,7 @@ export const project = {
     {
       data: {
         id: 1,
-        img: "../public/images/project1.jpg",
+        img: "/images/project1.jpg",
         title: "Dashboard Aksestani",
         desc: "this is my first project in the world of professional programming, this is a dashboard to check data in real-time from users who have accounts on the dashboard",
         link: "https://office.aksestani.com"
@@ -112,7 +112,7 @@ export const project = {
     {
       data: {
         id: 2,
-        img: "../public/images/project2.jpg",
+        img: "/images/project2.jpg",
         title: "Dashboard Lembur-Hiling",
         desc: "this is my second project in the world of professional programming, this is a dashboard to check data in real-time from users who have accounts on the dashboard",
         link: "https://app.lemburhiling.com"
@@ -121,7 +121,7 @@ export const project = {
     {
       data: {
         id: 3,
-        img: "../public/images/project3.jpg",
+        img: "/images/project3.jpg",
         title: "Web Portfolio",
         desc: "This is my first Portfolio",
         link: "https://porto-react.vercel.app"
