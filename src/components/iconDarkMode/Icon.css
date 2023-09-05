@@ -1,0 +1,40 @@
+.dark_mode {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.dark_mode .dark_mode_input {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .dark_mode .toogle-dark-mode{
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .dark_mode .toogle-dark-mode {
+    left: 0;
+  }
+  
+  .dark_mode .toogle-light-mode {
+    left: 100%;
+  }
+  
+  .dark_mode input:checked + .toogle-dark-mode {
+    opacity: 0;
+  }
+  
+  .dark_mode input:checked + .toogle-light-mode {
+    opacity: 1;
+  }
+  
+  .dark_mode input:checked + .toogle-light-mode ~ .toogle-dark-mode {
+    opacity: 0;
+  }
+  
