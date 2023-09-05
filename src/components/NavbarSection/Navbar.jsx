@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { header } from "../../content";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useDarkMode } from "../../DarkModeContext";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import AOS from "aos";
 import "../../../node_modules/aos/dist/aos.css";
 
 const Navbar = () => {
+  const location = useLocation()
   const [activeLinks, setActiveLinks] = useState({
     home: false,
     project: false,
@@ -17,6 +18,15 @@ const Navbar = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  useEffect(() => {
+    setActiveLinks({
+      home: location.pathname === '/',
+      project: location.pathname === '/projects',
+      about: location.pathname === '/about',
+      contact: location.pathname === '/contact'
+    })
+  }, [location.pathname])
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [animateSpin, setAnimateSpin] = useState(false);
@@ -55,7 +65,7 @@ const Navbar = () => {
                 className={activeLinks.about ? "linkActive" : "Link"}
               >
                 {header.about}
-              </Link>{" "}
+              </Link>
               <Link
                 to="/projects"
                 className={activeLinks.project ? "linkActive" : "Link"}
@@ -142,7 +152,7 @@ const Navbar = () => {
                   {header.project}
                 </Link>
                 <Link
-                  to="contact"
+                  to="/contact"
                   className={activeLinks.contact ? "linkActive" : "Link"}
                   onClick={toggleMobileMenu}
                 >
