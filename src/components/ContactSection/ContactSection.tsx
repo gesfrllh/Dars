@@ -43,7 +43,7 @@ const ContactSection = () => {
 
     const formattedPhone = phone.replace(/\D/g, "");
 
-    const whatsappURL = `https://wa.me/6282125446595?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/62822258001575?text=${encodeURIComponent(
       message
     )}`;
 
@@ -122,6 +122,13 @@ const ContactSection = () => {
             <div className="flex items-center justify-center">
               <div className={darkMode? 'border rounded-lg px-4 py-2 shadow-md text-yellow-500 form-control' : 'border rounded-lg px-4 py-2 shadow-md text-black form-control hover:ring-yellow-50 hover:ring-4 hover:ring-opacity-20 focus:ring-yellow-500 focus:ring-4 focus:ring-opacity-20 ' }  onClick={handleSubmit}>
                 Send WhatsApp Message
+              </div>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className={darkMode? 'border rounded-lg px-4 py-2 shadow-md text-yellow-500 form-control' : 'border rounded-lg px-4 py-2 shadow-md text-black form-control hover:ring-yellow-50 hover:ring-4 hover:ring-opacity-20 focus:ring-yellow-500 focus:ring-4 focus:ring-opacity-20 ' }>
+               <a href="../../public/pdf/dwiaryasafrulloh.pdf" download target="_blank">
+                Download CV 
+               </a>
               </div>
             </div>
           </div>

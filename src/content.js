@@ -17,7 +17,7 @@ export const about = {
   title: "Hi, i ' m ",
   name: "Dwi Arya Safrulloh",
   description:
-    "I'm Frontend Developer who loves coffee, I started liking programming when I was on the internet and I accidentally opened a console element, and I started asking myself, what does this code mean?, and I started looking for answers. From then on I liked programming, my experience in the world of programming was 3 years, and in professional programming it was 1 year, if you are interested in me you can download my cv or you can send a message to me via the input form at contact. Thanks.",
+"I'm a Frontend Developer with a passion for coffee. My journey into programming began when I was browsing the internet and accidentally opened the browser's console. Curious about what the code meant, I started searching for answers — and that curiosity grew into a passion. I now have 3 years of professional experience in the field. If you're interested in working with me, feel free to download my CV or send me a message through the contact form.Thank you!",
   stack: [
     {
       data: {
@@ -98,7 +98,7 @@ export const project = {
   id: "project",
   title: 'Welcome',
   description:
-    "This is my litle project, I'm working on several Dashboard and Web Portfolio, And i Build this project with coffe, because coffe it's my friend",
+  "This is one of my personal projects. I'm currently working on several dashboards and web portfolios. I built this project with the help of a lot of coffee — my trusted companion during development.",
   project: [
     {
       data: {
@@ -121,6 +121,15 @@ export const project = {
     {
       data: {
         id: 3,
+        img: "/images/project4.png",
+        title: "Nexmedis App Dashboard",
+        desc: "This is my third project in the world of professional programming, This Dashboard App functions to faciltate hospital services integrated with AI.",
+        link: "https://app.nexmedis.com"
+      },
+    },
+    {
+      data: {
+        id: 4,
         img: "/images/project3.jpg",
         title: "Web Portfolio",
         desc: "This is my first Portfolio",
